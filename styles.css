@@ -43,6 +43,28 @@
 
 /* Tic Tac Toe */
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("./macabre-background");
+}
+
 #Title {
+    font-size: 4rem;
+    color: white;
     text-align: center;
+}
+
+#Game {
+    margin: 4rem;
+    display: grid;
+    grid-template: repeat(3,1fr) / repeat(3,1fr);
+    border: 2px solid white;
+}
+
+#Game div {
+    border: 1px dashed white;
+    width: 10vw;
+    height: 10vw;
 }
